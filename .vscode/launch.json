@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Rust-debug",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/debug/redis-server.exe",
+            "args": [
+            ],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo build"
+        },
+        {
+            "name": "Release",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/target/release/redis-server.exe",
+            "args": [
+            ],
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "cargo build release"
+        }
+    ]
+}
